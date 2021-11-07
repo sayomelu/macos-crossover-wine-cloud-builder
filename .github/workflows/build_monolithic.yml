@@ -23,7 +23,7 @@ env:
 
 jobs:
   llvm-clang:
-    runs-on:  macos-latest
+    runs-on: macos-11
     env:
       # crossover source code to be downloaded
       CROSS_OVER_SOURCE_URL: https://media.codeweavers.com/pub/crossover/source/crossover-sources-21.0.0.tar.gz
@@ -81,7 +81,7 @@ jobs:
       matrix:
         CROSS_OVER_VERSION: [21.0.0, 20.0.4, 19.0.2] # 20.0.2, 20.0.1, 20.0.0
 
-    runs-on:  macos-latest
+    runs-on: macos-11
 
     env:
       # crossover source code to be downloaded
